@@ -9,9 +9,6 @@ before_install:
 script:
   - docker run -e CI=true docker-react npm run test -- --coverage
 
-# app name supplied by ebs
-# environment name provided by ebs 
-# bucket_path is app name by default
 deploy: 
   provider: elasticbeanstalk
   region: "us-west-2"
